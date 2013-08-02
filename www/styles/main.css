@@ -1,0 +1,184 @@
+.ajax-loader {
+  font-size:1.2em;
+  position:fixed;
+  top:50%;
+  left:50%;
+  width:200px;  
+  margin:0 -84px 0 -64px;  
+  width: 128px;
+  height: 135px;
+  text-align:center; 
+  z-index:4000;
+  background: url(../images/ajax_loader.gif) no-repeat center 5px;
+  text-align: center;  
+  color:#222222;}
+
+html{min-height:100%;position:relative}/* make sure it is at least as tall as the viewport */
+
+html,body { background-color: white; }
+#content { top: 40px; overflow-y: auto; position: relative; min-height: 800px; width: 80%; left:10%; }
+#dateRange-txt { width: 200px; height: 25px; margin-left: 20px; margin-right: 20px; float: left; text-align: center; color: #000; }
+.datepicker {
+  z-index: 10000;
+}
+
+.time-text {
+  width: 220px;
+  display: none;  
+}
+
+
+#delete-tab {
+  background: url('../images/delbutton.png') 0px 0px no-repeat;  
+  background-size: 50px 25px;
+  width: 50px;
+  height: 25px;
+  position: absolute;
+  right: 25px;
+  top: 5px;
+  cursor: pointer;
+}
+
+#rename-tab {
+  background: url('../images/rename_button.png') 0px 0px no-repeat;  
+  background-size: 50px 20px;
+  width: 50px;
+  height: 20px;
+  position: absolute;
+  right: 80px;
+  top: 8px;
+  cursor: pointer;
+}
+
+.chart-toolbox {
+  background: url('../images/tools.png') 0px 0px no-repeat;  
+  background-size: 25px 25px;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  float: left;
+  bottom: 0px;  
+  margin-bottom: -10px;  
+}
+
+.chart {
+  min-width: 250px; 
+  width: 90%; 
+  height: 600px; 
+  margin: 70px 20px auto;     
+  padding-bottom: 40px;  
+  background-color: white;
+  cursor: pointer;
+  list-style: none;
+}
+
+.chart_graph {  
+  margin: 0px;
+  margin-top: -25px;
+  height: 100%;
+}
+
+.chart h1 {
+  font-size: 18px;
+  position: relative;
+  top:0px;
+  margin: 0;
+  padding: 0;
+  margin-top: -40px;  
+}
+
+.toolbox{
+  width: 600px;
+  height: 40px;
+  margin-top: -20px;
+  margin-left: 25px;
+  left:0px;  
+  background-color: white;
+  border-radius: 15px;
+  display: none;
+}
+
+.toolbox ul{
+  padding: 5px 0px 5px 0px;
+  margin-top: 6px;
+  margin-left: 4px;
+  top:6px;
+  position: relative;
+  color: white;  
+}
+
+.toolbox ul li {
+  list-style: none;
+  float: left;
+  display: inline;
+  min-width: 60px;
+  padding: 5px 5px 0 5px;
+  margin-left: 5px;
+  height: 25px;
+  border: 1px solid #666;
+  border-radius: 15px;
+  background: #333;
+  text-align: center;
+}
+
+.toolbox ul li:hover {
+  font-weight: bold;
+  color:white;
+  border-color: white;
+  background: #000;
+}
+
+#exportArea {
+  font-family: Arial; 
+  font-size: 13px; 
+  color: #0077CC;  
+  padding: 1px 1px 1px 1px;
+  width: 90%;
+  height: 90%;
+}
+
+.ui-dialog { position: absolute; padding: .2em; width: 300px; overflow: hidden; border: #000 double 1px; }
+.ui-dialog .ui-dialog-titlebar { padding: .4em 1em; position: relative;  }
+.ui-dialog .ui-dialog-title { float: left; margin: .1em 16px .1em 0; } 
+.ui-dialog .ui-dialog-titlebar-close { position: absolute; right: .3em; top: 50%; width: 19px; margin: -10px 0 0 0; padding: 1px; height: 18px; }
+.ui-dialog .ui-dialog-titlebar-close span { display: block; margin: 1px; }
+.ui-dialog .ui-dialog-titlebar-close:hover, .ui-dialog .ui-dialog-titlebar-close:focus { padding: 0; }
+.ui-dialog .ui-dialog-content { position: relative; border: 0; padding: .5em 1em; background: none; overflow: auto; zoom: 1; }
+.ui-dialog .ui-dialog-buttonpane { text-align: left; border-width: 1px 0 0 0; background-image: none; margin: .5em 0 0 0; padding: .3em 1em .5em .4em; }
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset { float: right; }
+.ui-dialog .ui-dialog-buttonpane button { margin: .5em .4em .5em 0; cursor: pointer; }
+.ui-dialog .ui-resizable-se { width: 14px; height: 14px; right: 3px; bottom: 3px; }
+.ui-draggable .ui-dialog-titlebar { cursor: move; }
+
+#presets-place{
+  min-height: 400px;
+  min-width: 600px;
+}
+
+.btn-group-setting {
+  float: right;
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  min-width: 200px;
+  left: -100px;
+}
+
+.debug-row {
+  width: 10%;
+  height: 300px;
+  border: 1px solid #000;
+  overflow-y: scroll;
+  overflow-x: auto;
+}
+
+.debug-tables table tr td,th{
+  border-right: 1px solid #000;
+}
+
+.debug-tables table tr th{
+  border-top: 1px solid #000;
+  background-color: #AAA;
+}
